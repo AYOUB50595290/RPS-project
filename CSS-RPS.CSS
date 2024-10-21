@@ -1,0 +1,66 @@
+
+      /*body {
+       background-color: rgb(36, 32, 32);
+        color: white;
+        font-family: Arial;
+      }*/
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        color:black;
+          font-family: bold;
+      }
+  
+      .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Makes sure the video covers the screen while keeping aspect ratio */
+        z-index: -1; /* Places the video behind all content */
+      }
+        .postion{
+          text-align: center; /* Center text */
+        }
+        .p1 {
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .icon{
+          height: 70px;
+        }
+        .move-button{
+          background-color: transparent;
+          border: 3px solid white;
+          width: 100px;
+          height: 100px;
+          border-radius:60px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .result{
+          font-size: 25px;
+          font-weight: bold;
+          margin-top: 50px;
+        }
+        .B{
+          border: none;
+          border-radius: 50px;
+          color: wheat;
+          background-color: black;
+          padding-left: 15px;
+          padding-top: 10px;
+          padding-right: 15px;
+          padding-bottom: 10px;
+          margin-bottom: 30px; /*separate the paragraphe on the buttom*/
+          cursor: pointer;
+          font-weight: bold;
+          margin-top: 30px;
+        }
+        .detail{
+          font-weight: bold;
+          font-size: 20px;
+        }

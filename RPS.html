@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="CSS-RPS.CSS">
+  </head>
+  <body> 
+     <!-- Video background -->
+  <video class="background-video" autoplay loop muted>
+    <source src="img/back.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <div class="postion">
+    <p class="p1">Rock Paper Scissors</p>
+
+    <button onclick="PlayGame('rock')"class="move-button">
+        <img src="img/rock.png" class="icon"></i>
+    </button>
+    <button onclick="PlayGame('paper')"class="move-button">
+        <img src="img/paper.png" class="icon" >
+    </button>
+    <button onclick="PlayGame('scissors')"class="move-button">
+        <img src="img/scissors.png" class="icon" >
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-moves detail"></p>
+    <p class="js-score detail"></p>
+    <button
+      onclick="
+            score.wins=0;
+            score.losses=0;
+            score.ties=0
+            localStorage.removeItem('score');
+            updateScoreElement();
+            "
+            class="B"
+    >
+      reset scores
+    </button></div>
+    <script src="JS-RPS.js">
+    </script>
+  </body>
+</html>
